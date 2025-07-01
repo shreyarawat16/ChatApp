@@ -72,7 +72,7 @@ function App() {
             Logout
           </Button>
        
-        <VStack h="full" bg="purple.100" w="full" overflowY="auto">
+        <VStack h="full" bg="purple.100" w="full" overflowY="auto" css={{"&::-webkit-scrollbar": {display: "none"}}}>
          {
          messages.map((val)=>(
            <Message key={val.id}
